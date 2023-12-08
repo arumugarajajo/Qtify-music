@@ -8,6 +8,7 @@
     height: 205px;
     border-radius: 10px;
     overflow: hidden;
+    cursor: pointer;
 }
 
 .banner{

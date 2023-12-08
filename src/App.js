@@ -6,6 +6,7 @@ import { useEffect, useState } from 'react'
 import { fetchTopAlbums, fetchNewAlbums, fetchSongs } from './api/api'
 import Section from './components/Section/Section.jsx'
 import FilterSection from './components/FilterSection/FilterSection'
+import FAQs from './components/FAQs/FAQs.jsx'
 
 function App() {
 
@@ -111,6 +112,7 @@ function App() {
         <Section type='album' title='Top Albums' data={topAlbumSongs} />
         <Section type='album' title='New Albums' data={newAlbumSongs} />
         <FilterSection data={newAlbumSongs} type='songFilter' title='Songs' filteredData={filteredData} filteredDataValues={filteredDataValues} value={value} handleChange={handleChange} handleToggle={handleToggle}/>
+        <FAQs />
       </div>
     </>
   )
